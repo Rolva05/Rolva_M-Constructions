@@ -276,3 +276,19 @@ section h2{
     }
 
 }
+
+
+html{scroll-behavior:smooth}
+img{max-width:100%;height:auto;display:block}
+.container{width:min(1200px,92%);margin:auto}
+section{scroll-margin-top:90px}
+@media (max-width:768px){
+nav ul{flex-direction:column}
+.hero,.about,.services,.contact,.row{display:flex;flex-direction:column!important}
+h1{font-size:2rem!important}
+h2{font-size:1.6rem!important}
+p{font-size:1rem}
+iframe{width:100%!important}
+}
+.reveal{opacity:0;transform:translateY(40px);transition:.8s}
+.reveal.active{opacity:1;transform:none}
